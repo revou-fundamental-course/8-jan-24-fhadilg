@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Kalkulator Matematika</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="col-lg-6 mx-auto mt-5">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Luas</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Keliling</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="card mx-auto mt-1">
+                        <div class="card-header bg-primary text-white text-center">
+                            <h3>Luas Persegi</h3>
+                        </div>
+                        <div class="card-body">
+                            <img src="./image/luaspersegi.png" alt="Persegi" class="img-fluid">
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="text-center">
+                                <h3 class="fw-bold">Hitung Luas Persegi</h3>
+                                <input class="form-control form-control-sm" id="sisi-luas" type="text" placeholder="Nilai Sisi">
+                                <button class="btn btn-primary mt-3">Hitung</button>
+                            </div>
+                            <span id="luas" style="white-space: pre-line"></span>
+                            <div class="float-end">
+                                <button class="btn btn-warning text-white mt-3">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="card mx-auto mt-1">
+                        <div class="card-header bg-primary text-white text-center">
+                            <h3>Keliling Persegi</h3>
+                        </div>
+                        <div class="card-body">
+                            <img src="./image/kelilingpersegi.png" alt="Persegi" class="img-fluid">
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="text-center">
+                                <h3 class="fw-bold">Hitung keliling Persegi</h3>
+                                <input class="form-control form-control-sm" id="sisi-keliling" type="text" placeholder="Nilai Sisi">
+                                <button class="btn btn-primary mt-3">Hitung</button>
+                            </div>
+                            <span id="keliling" style="white-space: pre-line"></span>
+                            <div class="float-end">
+                                <button class="btn btn-warning text-white mt-3">Reset</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>
